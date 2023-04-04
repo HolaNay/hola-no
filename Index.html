@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💗 YA 02 MESES!! ¿Juntos Por Más?💗</title>
+<style>
+    .body {
+        background-color: darkcyan;
+        text-align: center;
+    }
+
+    .body__title{
+        color: white;
+    }
+
+    .body__img{
+        width: 50%;
+        border-radius: 20%;
+    }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">💗YA 02 MESES!! ¿Juntos Por Más?💗</h1>
+    <img
+      src="https://p4.wallpaperbetter.com/wallpaper/476/737/108/cartoon-cinderella-fairy-godmother-jaq-gus-characters-list-1920%C3%971200-wallpaper-preview.jpg" 
+      alt="Foto D My"class="body__img" />
+    <button id="yes">❤️ Si mi amor ❤️</button>
+    <button id="no"> No, ya mucho</button>
+
+    <script>
+        const vutonSi = document.getElementById("yes");
+        const vutonNo = document.getElementById("no");
+
+        const SomosUnGranEquipo = () => {
+            alert("Ya, Gracias 👍");
+            alert("¿Pensaste que solo era eso? Pues no mi amor ¡Feliz dos meses juntos! Hoy quiero dedicarte estas palabras para expresarte lo mucho que valoro nuestra relación y las ganas que tengo de construir algo duradero y sano contigo ❤️. Desde el primer día que te conocí, supe que había algo especial en ti. Tu alegría, tu sinceridad y tu forma de ver la vida me cautivaron de inmediato. Y a medida que hemos ido conociéndonos más, me he dado cuenta de que eres una persona única, llena de virtudes y cualidades que admiro profundamente. Me siento muy afortunado de tenerte en mi vida y de poder compartir estos primeros dos meses juntos. Cada momento a tu lado ha sido especial, lleno de risas, complicidad y amor. Y lo más importante es que sé que podemos construir algo sólido y duradero si seguimos trabajando juntos en nuestra relación porque nosotros somos un gran equipo y eso ambos lo tenemos presente siempre. Quiero que sepas que estoy dispuesto a hacer todo lo que esté en mi mano para mantener nuestra relación sana y feliz. Quiero que confíes en mí y que sepas que siempre estaré aquí para apoyarte y quererte tal y como eres. Gracias por estos dos maravillosos meses y por ser mi novia. Espero que juntos podamos construir una relación llena de amor, respeto y confianza. Disfruta la canción mi pequeña princesita 👑💓.Con todo mi amor,Cristhian") ;
+            location.href = "https://www.youtube.com/watch?v=FZrmdRRo-Ww";
+        }
+
+        const EvitarQueMeDigasQueYaNo = () => {
+            vutonNo.style.position = "absolute";
+            vutonNo.style.top = (Math.random() * window.innerHeight) * "px";
+            vutonNo.style.left = (Math.random() * window.innerWidth) * "px";
+        }
+
+        vutonSi.addEventListener("click", SomosUnGranEquipo);
+        vutonNo.addEventListener("mouseover", EvitarQueMeDigasQueYaNo);
+    </script>
+</body>
+
+</html> 
